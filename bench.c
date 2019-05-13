@@ -16,7 +16,12 @@ int main(int argc, char ** argv) {
 		int x=clock();
 		benchmark(input, len);
 		x = clock() - x;
-		printf("%d reps in %d ticks (%f/s)\n", LOOPS, x, (double)LOOPS / ((double)x/CLOCKS_PER_SEC));
+		printf(
+				"%d reps in %d ticks (%f/s)\n",
+				LOOPS,
+				x,
+				(double)LOOPS / ((double)x/CLOCKS_PER_SEC)
+		      );
 
 	}
 	return 0;
