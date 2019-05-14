@@ -41,9 +41,9 @@ void sha1_hash(const uint8_t message[], size_t len, uint32_t hash[static STATE_L
 }
 
 
-void benchmark(char *input, size_t input_len) {
+void benchmark(char *input, size_t input_len, unsigned int loops) {
 
-	for (int i=1; i<=LOOPS; i++) {
+	for (unsigned int i=1; i<=loops; i++) {
 		uint32_t hash[STATE_LEN];
 		sha1_hash((const uint8_t *)input, input_len, hash);
 	}

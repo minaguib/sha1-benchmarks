@@ -19,7 +19,7 @@ int main(int argc, char ** argv) {
 			printf("Benchmarking input length %3d: ", len);
 		}
 		int x=clock();
-		benchmark(input, len);
+		benchmark(input, len, LOOPS);
 		x = clock() - x;
 		rate = (double)LOOPS / ((double)x/CLOCKS_PER_SEC);
 		if (interactive) {

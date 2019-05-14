@@ -6,6 +6,6 @@
 #define MAXLEN 512
 #define LOOPS 500000
 
-void benchmark(char *input, size_t input_len);
+void benchmark(char *input, size_t input_len, unsigned int loops);
 
 #endif
