@@ -1,4 +1,7 @@
-Some benchmarks of various SHA1 implementations at various input lengths
+
+# Some benchmarks of various SHA1 implementations at various input lengths
+
+## Building and running
 
 Build via:
 ```
@@ -12,7 +15,7 @@ Run via:
 ./bench-nayuki
 ```
 
-Notes:
+## Result notes:
 
 All 3 implementations have similar performance at the tested input sizes 1 bytes -> 512 bytes
 
